@@ -1,0 +1,97 @@
+alright solder goblin, lock in. imma walk you through this pin by pin so even with your shaky hands ts will still work fr.
+I’m assuming:
+ESP32 dev board
+common GND
+LiPo → USB charger → 5V/3.3V rail
+you know which end of a soldering iron is hot (barely)
+0️⃣ POWER (DO THIS FIRST OR NOTHING WORKS, GENIUS)
+battery + charger
+LiPo + → charger B+
+LiPo − → charger B−
+charger to ESP32
+charger OUT+ / 5V → rocker switch
+other side of rocker switch → ESP32 5V / VIN
+charger OUT− / GND → ESP32 GND
+👉 rocker switch just cuts power. simple. don’t overengineer ts.
+1️⃣ COMMON GROUND (IMPORTANT OR YOU’LL CRY)
+Pick ONE GND pin on the ESP32.
+From that GND:
+button ground
+LED ground
+transistor emitter
+IR LED ground
+ALL connect here.
+Yes. ALL. Ground is communal property.
+2️⃣ BUTTONS (STOP MIXING THEM UP)
+top button = MODE
+one leg → ESP32 GPIO 32
+other leg → GND
+bottom button = ACTIVATE
+one leg → ESP32 GPIO 33
+other leg → GND
+NO resistors needed.
+We’re using INPUT_PULLUP because we’re not idiots.
+3️⃣ LEDs (THIS IS WHERE YOU BURN THEM IF YOU’RE DUMB)
+Each LED needs its own resistor. No sharing like broke roommates.
+LED 1 (Mode 0)
+ESP32 GPIO 25
+→ 220–330Ω resistor
+→ LED anode (long leg)
+LED cathode (short leg) → GND
+LED 2 (Mode 1)
+GPIO 26
+→ resistor
+→ LED
+→ GND
+LED 3 (Mode 2)
+GPIO 27
+→ resistor
+→ LED
+→ GND
+LED 4 (Mode 3)
+GPIO 14
+→ resistor
+→ LED
+→ GND
+If an LED doesn’t light:
+flip it
+don’t panic
+you soldered it backwards, clown 🤡
+4️⃣ IR TRANSMITTER (YES YOU NEED THE TRANSISTOR)
+transistor (NPN, like 2N2222)
+Facing flat side toward you:
+LEFT   = Collector
+MIDDLE = Base
+RIGHT  = Emitter
+wiring
+GPIO 4 → 1kΩ resistor → Base
+Emitter → GND
+Collector → IR LED cathode
+IR LED
+IR LED anode → 5V through 100–220Ω resistor
+IR LED cathode → collector (from above)
+This lets the ESP32 switch the IR LED without nuking itself. good job not skipping this.
+5️⃣ FINAL PIN MAP (READ THIS LIKE THE BIBLE)
+GPIO 32 → MODE BUTTON
+GPIO 33 → ACTIVATE BUTTON
+
+GPIO 25 → LED 1 → resistor → GND
+GPIO 26 → LED 2 → resistor → GND
+GPIO 27 → LED 3 → resistor → GND
+GPIO 14 → LED 4 → resistor → GND
+
+GPIO 4  → 1kΩ → transistor base
+Emitter → GND
+Collector → IR LED → resistor → 5V
+
+ALL GNDs → SAME GND
+6️⃣ BEFORE YOU POWER IT (DO NOT SKIP OR RIP ESP32)
+continuity check GND to GND ✅
+no shorts between 5V and GND ❌
+LEDs not backwards (lol)
+battery plugged into charger, NOT directly into ESP32
+if you want, next I can:
+draw you an ASCII wiring diagram
+convert this to a perfboard layout
+or help you not melt the ESP32 like a dumbass
+say the word, shark engineer 🦈😤
