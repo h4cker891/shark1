@@ -90,8 +90,3 @@ continuity check GND to GND ✅
 no shorts between 5V and GND ❌
 LEDs not backwards (lol)
 battery plugged into charger, NOT directly into ESP32
-if you want, next I can:
-draw you an ASCII wiring diagram
-convert this to a perfboard layout
-or help you not melt the ESP32 like a dumbass
-say the word, shark engineer 🦈😤
