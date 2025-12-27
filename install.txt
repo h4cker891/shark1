@@ -1,0 +1,76 @@
+WHERE YOU RUN THE CODE (ONE OPTION, DON’T GET CREATIVE)
+You run ALL of it in Arduino IDE.
+Not VS Code. Not Python. Not Notes app 💀
+step 1: download arduino ide
+Go to:
+👉 arduino.cc → Software → Arduino IDE
+download for macOS
+open the .dmg
+drag Arduino into Applications
+open it (yes, allow it, Apple isn’t gonna arrest you)
+🔌 CONNECT THE ESP32 (OBVIOUS BUT APPARENTLY NEEDED)
+plug ESP32 into your Mac with USB cable
+if it’s charge-only and not data, nothing will work → skill issue
+🧠 SET UP ARDUINO FOR ESP32 (IMPORTANT, DON’T SKIP)
+step 2: add ESP32 board support
+In Arduino IDE:
+Arduino IDE → Settings
+In “Additional Boards Manager URLs”, paste this:
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+click OK
+step 3: install esp32 boards
+go to Tools → Board → Boards Manager
+search esp32
+install “esp32 by Espressif Systems”
+wait (yes, patience, i know it hurts)
+📦 INSTALL LIBRARIES (OR IT WILL FAIL)
+step 4: install required libraries
+Go to Sketch → Include Library → Manage Libraries
+Install:
+IRremoteESP8266 (by crankyoldgit)
+ESP32 BLE Arduino
+If you don’t do this and hit compile → red errors → crying → your fault.
+⚙️ SELECT THE RIGHT BOARD + PORT (THIS IS WHERE MOST PEOPLE FUMBLE)
+step 5: board
+Tools → Board → ESP32 Arduino
+select ESP32 Dev Module
+(if you know your exact board, good for you, but this one works)
+step 6: port
+Tools → Port
+select the port that says something like:
+/dev/cu.usbserial
+/dev/cu.SLAB_USBtoUART
+If there’s only one option, congrats, that’s it.
+🧾 PUT THE CODE IN (YES, ALL OF IT)
+step 7: paste code
+open Arduino IDE
+delete everything in the editor
+paste the ENTIRE code I gave you
+don’t edit random stuff unless you enjoy pain
+⬆️ UPLOAD (THE MAGIC BUTTON)
+step 8: upload
+click → Upload (top left)
+wait
+If it says:
+“Connecting…” → good
+“Done uploading” → W
+red wall of text → you messed up earlier
+⚠️ if upload gets stuck
+Hold the BOOT button on ESP32
+→ keep holding
+→ click upload
+→ release when it starts uploading
+yes it’s annoying. yes it’s normal.
+✅ HOW TO KNOW IT WORKED
+ESP32 resets
+LED 1 turns on
+buttons respond
+TVs nearby start acting funny
+iphones get popups
+you smile like a villain 😈
+❌ COMMON “I MESSED UP” CHECKLIST
+wrong board selected
+wrong port
+missing library
+USB cable is trash
+ESP32 needs BOOT button
