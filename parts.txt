@@ -1,14 +1,6 @@
 ESP32-WROVER DevKit (with PSRAM) purchased
 
-3.2″ ILI9341 SPI TFT LCD 320×240 (with touch + SD slot)
-https://www.amazon.com/WWZMDiB-Display-Interface-Arduino-320x240/dp/B0CCHVCWXJ/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.g0ZHQ-dC7j6umOnXMWROmYE3t2VKBm-0W66jG0owz7_qZTntwK__Uo-d2Y1Vx8o9CrtFO3IChdI5EEONp55fcMtMBuDCIt7YcSHFXRHo0-i5zJLBW8DcANvLd7gd8IrLIHmFxldzz6eMO51HQb9XgcIYGoZJck5mtWf1AGo6JaPdqzNvH-IElBfp8xRb2P6DiXIsSmu0gB5dg6323y2HUK5_U5lg5bCbBocIcPQQVu8.krm5sqCaw0PzRNXxFltRKm8E70-OVHwhHget8pv7PoE&dib_tag=se&keywords=3.2%E2%80%B3%2BILI9341%2BSPI%2BTFT%2BLCD%2B320%C3%97240&qid=1758381754&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
-needed
-
-ESP32-CAM module (OV2640)
-https://www.amazon.com/Arducam-Module-Megapixels-Arduino-Mega2560/dp/B012UXNDOY/ref=sr_1_3?crid=1IBN97Q22WAIJ&dib=eyJ2IjoiMSJ9.wEa6L-se53A2WVQIjLp_VzQdSP8JLabfF6L60wojjcJUSOm5_ubJ0pEr3bs6RAT1q67gIAPf8bAeRVCxZeNMpXT0T-29-Mwk9zMhac82GBTzTBQvsJPTkONk148wGqp7Q0znDITXwMUB3g4PI6L4taM5sN-cNHH-kKf-ZZgeZMhunX80vNSH9RKnt9oK3fzPYtktK2eFTRzXqaqHy3qwp-BkUACTspwCInP8CAlG5hc.A1utWeJRaC-whQ5kWUaRSFNlnMHFLk-Q1CmoN6K2kBQ&dib_tag=se&keywords=OV2640+SPI+Camera+Module&qid=1758382092&sprefix=ov2640+camera+module%2Caps%2C683&sr=8-3
-needed
-
-6 × tactile push buttons (UP, DOWN, LEFT, RIGHT, SELECT, BACK) purchased
+2 × tactile push buttons
 
 IR LED (940 nm, e.g. TSAL6200)
 https://www.amazon.com/uxcell-Infrared-Emitter-Emitting-TSAL6200/dp/B07W4LT2Z7/ref=sr_1_1?crid=IJNE2HZ1H2YM&dib=eyJ2IjoiMSJ9.AFiHaxs5GQaXmSVGgVh5qGzhn7w5ce3OZ9kQ3MMmNM9N584vCNvo-4LEm-X76iSkO3ZaLip65en-1jLlVkduh8vEr4PkZ2SfcYBMt9dR15o-T7MJI0GqP_ayhxBQ_2vGH6Krt3_H3H9ORGAJcJzytWVegErfrmRlTTXOc-5rgprHbizhoh9pfce0d3Bif8zYH2zRDDNPRiPXyI8RQiU5RrhigXkIKmwjKb_P8P-TYZQ.Ww3LlDnzFhi42VG2UOyYQTPvh2Jnb6Gnn7Ak9FgFdFk&dib_tag=se&keywords=TSAL6200&qid=1758382446&sprefix=tsal6200%2Caps%2C210&sr=8-1&th=1
@@ -32,7 +24,6 @@ On/Off slide switch
 https://www.amazon.com/DaierTek-Listed-Switches-Automotive-KCD1-5Pack/dp/B07S1MV462/ref=sr_1_2_sspa?crid=1JOEEZQ0Q6LJM&dib=eyJ2IjoiMSJ9.rY2cOkeQbP7eIEJC9O0xykbhVhbWgAxHYqiPiw3rJAFlkP9ghRl7kfe6HDit9ING-R4CN_cOae6cpenu0emA0O3vYXCo-B7SaaPR7vhcpgGZPKWIF2CyIvud133SuX2OSNoyu0wAw7vZjAfbAecXnzDS9ADISwDCQvv9E2CB4DZ64Pv_9bhe4XfAjEnfwQapQY1jzWtK5uMIQ6WNeAlGDR3P_TPp10Eukq7w43gWBwQU03ffL3ASk68p4YkVnBcHto2FrXt8-1PCp7vyUXK9d54_CRT2M1Z2r-1xnWAkRLg.vMGbh7WNXvNdguUYzlWO0IDm47xJSGY5VnJ34r4KD5Y&dib_tag=se&keywords=on%2Boff%2Bswitch&qid=1758383088&sprefix=on%2Boff%2Bswitch%2Caps%2C141&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
 needed
 
-MicroSD card (for storage, works with display slot) purchased
 
 Jumper wires or ribbon cable purchased
 
